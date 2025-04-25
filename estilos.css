@@ -15,26 +15,33 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 5px;
     background: linear-gradient(90deg, lightblue 0%, skyblue 100%);
     position: fixed;
     top: 0;
-    left: 0px;
+    left: 0;
     width: 100%;
+    color: white;
+}
+
+header h2{
+    margin-left: 70px;
 }
 
 nav {
     display: flex;
-    gap: 20px;
+    gap: 5px;
     align-items: center;
+    margin-right: 30px;
 }
 
 nav a {
     text-decoration: none;
     color: black;
+    
 }
 
-/* Botones */
+/* botones */
 button {
     background: white;
     color: black;
@@ -55,7 +62,7 @@ button:active {
 
 /* Sobre mí */
 #somi {
-    padding: 60px 0px;
+    padding: 60px 20px;
     text-align: center;
 }
 
@@ -64,21 +71,23 @@ button:active {
     align-items: center;
     justify-content: center;
     gap: 30px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
     margin-top: 20px;
 }
 
 #somi p {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 20%; 
+    flex: 1; 
+    text-align: left; 
 }
 
 #somi img {
     width: 250px;
     height: 400px;
-    object-fit: contain;
+    margin-right: 20%;
+    object-fit: contain; 
+    border-radius: 5px; 
     margin-top: 20px;
-    margin-right: 30px;
 }
 
 /* Lenguajes */
@@ -164,14 +173,6 @@ textarea {
 footer {
     background-color: lightskyblue;
     text-align: center;
+    color: white;
     padding: 10px;
-}
-
-footer div span {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    margin: 0 5px;
-    background: #ccc;
-    border-radius: 50%;
 }
