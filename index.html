@@ -1,13 +1,115 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Mi Página Web</title>
-        <meta charset="utf-8"/>
-        <meta name="autor" content="Alonso Rogado Pastor"/>
-        <link rel="stylesheet" TYPE="text/css" href=estilos.css>
-    </head>
-    <body>
-        <h1>Mi Página Web</h1>
-        <p>Bienvenidos</p>
-    </body>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portfolio Personal</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header>
+        <strong>ARP</strong>
+        <nav>
+            <h3>Mi Portfolio Personal</h3>
+        </nav>
+        <nav>
+            <a href="#somi"><button>Sobre mí</button></a>
+            <a href="#len"><button>Lenguajes</button></a>
+            <a href="#pr"><button>Proyectos</button></a>
+            <a href="#co"><button>Contactos</button></a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="somi">
+            <h1>Sobre mí</h1>
+            <hr>
+            <div>
+                <p>Hola a todos, me llamo Alonso y actualmente soy estudiante de primer año de DAM. Me apasiona la programación, los retos y entender cómo funciona todo por dentro. Mi actual objetivo es seguir formándome, no parar de estudiar y, en un futuro, trabajar para poderseguir creciendo como desarrollador (tanto de web como multiplataforma).</p>
+                <img src="img/yo.jpg">
+            </div>
+            </section>
+
+        <section id="len">
+            <h2>Lenguajes que sé usar</h2>
+            <hr>
+            <p>Durante este primer año, he usado distintos entornos de desarrollo como  Visual Studio Code, Apache NetBeans, SQL Developer. Los principales lenguajes de programación/datos que he usado son:</p>
+            <div>
+                <img src="img/html.png" alt="Html 5 (no es un lenguaje de programación)">
+                <img src="img/xsd.png" alt="XSD (no es un lenguaje de programación)">
+                <img src="img/css.png" alt="CSS">
+                <img src="img/sql.png" alt="Java">
+                <img src="img/java.png" alt="SQL">
+            </div>
+        </section>
+
+        <section id="pr">
+            <h2>Algunos de mis proyectos</h2>
+            <hr>
+            <div>
+                <article>
+                    <div>
+                        <img src="img/novelas.jpg">
+                    </div>
+                    <h3>Tipos de novelas</h3>
+                    <p>Una página web realizada como práctica en Lenguajes de Marcas donde se ven distintos tipos de
+                        novelas y algunos ejemplos famosos. Realizado en HTML y CSS.</p>
+                    <div>
+                        <a href="https://github.com/Alonso-RogPas/NovelasTipos">🔗</a>
+                    </div>
+                </article>
+
+                <article>
+                    <div>
+                        <img src="img/bebes.jpg">
+                    </div>
+                    <h3>Coste semanal de tu bebé</h3>
+                    <p>Programa hecho como prática en Programación donde se puede calcular lo que costaría alimentar a
+                        tu bebé. Interfaz gráfica, utiliza clases y atributos. Realizado en Java y Swing.</p>
+                    <div>
+                        <a href="https://github.com/Alonso-RogPas/CosteAlimentosBebes">🔗</a>
+                    </div>
+                </article>
+
+                <article>
+                    <div>
+                        <img src="img/javadoc.jpg">
+                    </div>
+                    <h3>Uso de la documentación JavaDoc adecuada</h3>
+                    <p>Proyecto de archivos Java donde se ha intentado utilizar la documentación adecuada para adoptar buenas prácticas en la programación. Realizado en Apache NetBeans.</p>
+                    <div>
+                        <a href="https://github.com/Alonso-RogPas/UsoJavaDoc">🔗</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="co">
+            <h2>Mis redes de contacto</h2>
+            <hr><br>
+            <form action="mailto:alonso.rogpas@educa.jcyl.es" method="post" enctype="text/plain">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="email" name="email" placeholder="Dirección de Correo" required>
+                <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            
+            <div>
+                <a href="https://github.com/Alonso-RogPas"><img src="img/github.png" alt="Github"></a>
+                <a href="https://www.linkedin.com/in/alonsorogpas/"><img src="img/linkedin.png" alt="LinkedIn"></a>
+                <a href="http://cifpjuandeherrera.centros.educa.jcyl.es/sitio/index.cgi?wid_seccion=1&wid_item=4"><img src="img/cifpjdh.jpg" alt="CIFP Juan de Herrera"></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <span></span><span></span><span></span><span></span><span></span>
+        </div>
+    </footer>
+
+</body>
+
 </html>
